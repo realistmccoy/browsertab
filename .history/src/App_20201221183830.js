@@ -11,24 +11,20 @@ function App() {
 		setHighlightStyle({
 			left: e.nativeEvent.layerX,
 		});
-	}
-
-	function hideHighlight(e) {
-		setHighlightStyle({
-			opacity: 0,
+  }
+  
+  function hideHighlight(e) {
+    setHighlightStyle({
+      opacity: 0
 			left: e.nativeEvent.layerX,
 		});
-	}
+  }
 
 	return (
 		<div className='app'>
 			<div className='browser'>
 				<div className='tabs'>
-					<div
-						className='tab'
-						onMouseOut={hideHighlight}
-						onMouseMove={moveHighlight}
-					>
+					<div className='tab' onMouseOut={hideHighlight} onMouseMove={moveHighlight}>
 						<div className='highlight' style={highlightStyle} />
 						<a>Home</a>
 					</div>

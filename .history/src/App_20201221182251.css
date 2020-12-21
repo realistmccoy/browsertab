@@ -95,12 +95,7 @@ body {
 	display: block;
 	position: absolute;
 	height: 80px;
-	width: 50px;
-	top: -10px;
-	left: -330px;
-	border-radius: 50%;
-	transition: 0.3s, ease-in-out;
-	opacity: 0.3;
-	pointer-events: none;
-	background: radial-gradient(rgb(134, 101, 225), rgba(194, 180, 233, 0));
+  width: 50px;
+  border-radius: 50;
+	background: white;
 }

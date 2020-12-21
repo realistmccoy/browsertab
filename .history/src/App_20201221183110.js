@@ -4,31 +4,19 @@ import './App.css';
 function App() {
 	const [highlightStyle, setHighlightStyle] = useState({
 		left: 0,
-		opacity: 0,
-	});
-	function moveHighlight(e) {
-		//update highlight
-		setHighlightStyle({
-			left: e.nativeEvent.layerX,
-		});
-	}
-
-	function hideHighlight(e) {
-		setHighlightStyle({
-			opacity: 0,
-			left: e.nativeEvent.layerX,
-		});
-	}
+  });
+  function moveHighlight(e) {
+    //update highlight
+    setHighlightStyle({
+      left:-200;
+    })
+  }
 
 	return (
 		<div className='app'>
 			<div className='browser'>
 				<div className='tabs'>
-					<div
-						className='tab'
-						onMouseOut={hideHighlight}
-						onMouseMove={moveHighlight}
-					>
+					<div className='tab' onMouseMove={moveHighlight} >
 						<div className='highlight' style={highlightStyle} />
 						<a>Home</a>
 					</div>
