@@ -13,13 +13,13 @@ function App() {
 				<div className='browser'>
 					<div className='tabs'>
             <Tab> 
-            <NavLink to='/'activeClass="is-active" exact={true}>Home</NavLink>
+            <Link to='/'>Home</Link>
             </Tab>
             <Tab> 
-            <NavLink to='/about'activeClass="is-active">About</NavLink>
+            <Link to='/about'>About</Link>
             </Tab>
             <Tab> 
-            <NavLink to='/contact'activeClass="is-active">Contact</NavLink>
+            <Link to='/contact'>Contact</Link>
             </Tab>
             
 					</div>

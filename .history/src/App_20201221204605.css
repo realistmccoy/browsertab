@@ -18,7 +18,7 @@ body {
 }
 
 .browser {
-	display: flex;
+	display flex-flow: word-spacing: ;
 	flex-direction: column;
 	background: #ffb91f;
 	border-radius: 5px;
@@ -33,7 +33,6 @@ body {
 	padding-right: 10px;
 	display: flex;
 	padding-top: 10px;
-
 }
 
 .tab {
