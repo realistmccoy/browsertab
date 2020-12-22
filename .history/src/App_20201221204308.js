@@ -19,7 +19,7 @@ function App() {
             <Link to='/about'>About</Link>
             </Tab>
             <Tab> 
-            <Link to='/contact'>Contact</Link>
+            <Link to='cContact'>Contact</Link>
             </Tab>
             
 					</div>
@@ -29,7 +29,7 @@ function App() {
           <Route path='/about'>
           <About />
           </Route>
-          <Route path='/contact'>
+          <Route path='/Contact'>
           <Contact />
           </Route>
           <Route path='/' exact={true}>

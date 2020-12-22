@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Tab from './components/Tab';
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+import about from './pages/about'
+import Home from './pages/Home'
 import './App.css';
 
 function App() {
@@ -12,30 +12,18 @@ function App() {
 			<div className='app'>
 				<div className='browser'>
 					<div className='tabs'>
-            <Tab> 
-            <Link to='/'>Home</Link>
-            </Tab>
-            <Tab> 
-            <Link to='/about'>About</Link>
-            </Tab>
-            <Tab> 
-            <Link to='/contact'>Contact</Link>
-            </Tab>
-            
+         <Tab> <a>Home</a></Tab>
 					</div>
 					<div className='viewport'>
-            <Switch>
-          
+          <Route path='/'>
+          <Home />
+          </Route>
           <Route path='/about'>
           <About />
           </Route>
-          <Route path='/contact'>
+          <Route path='/Contact'>
           <Contact />
           </Route>
-          <Route path='/' exact={true}>
-          <Home />
-          </Route>
-          </Switch>
           </div>
 				</div>
 			</div>

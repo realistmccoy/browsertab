@@ -12,28 +12,18 @@ function App() {
 			<div className='app'>
 				<div className='browser'>
 					<div className='tabs'>
-            <Tab> 
-            <Link to='/'>Home</Link>
-            </Tab>
-            <Tab> 
-            <Link to='/about'>About</Link>
-            </Tab>
-            <Tab> 
-            <Link to='/contact'>Contact</Link>
-            </Tab>
-            
+         <Tab> <a>Home</a></Tab>
 					</div>
 					<div className='viewport'>
             <Switch>
-          
+          <Route path='/' exact={true}>
+          <Home />
+          </Route>
           <Route path='/about'>
           <About />
           </Route>
-          <Route path='/contact'>
+          <Route path='/Contact'>
           <Contact />
-          </Route>
-          <Route path='/' exact={true}>
-          <Home />
           </Route>
           </Switch>
           </div>

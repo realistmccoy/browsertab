@@ -29,7 +29,7 @@ function App() {
           <Route path='/about'>
           <About />
           </Route>
-          <Route path='/contact'>
+          <Route path='/Contact'>
           <Contact />
           </Route>
           <Route path='/' exact={true}>

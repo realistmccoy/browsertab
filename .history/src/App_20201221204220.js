@@ -15,12 +15,6 @@ function App() {
             <Tab> 
             <Link to='/'>Home</Link>
             </Tab>
-            <Tab> 
-            <Link to='/about'>About</Link>
-            </Tab>
-            <Tab> 
-            <Link to='/contact'>Contact</Link>
-            </Tab>
             
 					</div>
 					<div className='viewport'>
@@ -29,7 +23,7 @@ function App() {
           <Route path='/about'>
           <About />
           </Route>
-          <Route path='/contact'>
+          <Route path='/Contact'>
           <Contact />
           </Route>
           <Route path='/' exact={true}>
